@@ -1,0 +1,24 @@
+<h2><a href="/members/{{ member.slug }}.html">
+	{% if position.year %}
+    {{ position.year }}
+	{% endif %}
+	{{ position.position }} : {{ member.name }}
+</a></h2>
+<ul>
+  {% if member.school %}
+      <li>School: {{ member.school }}</li>
+  {% endif %}
+  {% if member.work_phone %}
+      <li>Work Phone: {{ member.work_phone }}</li>
+  {% endif %}
+  {% if member.home_phone %}
+      <li>Home Phone: {{ member.home_phone }}</li>
+  {% endif %}
+  {% if member.email %}
+      <li>Email: {{ member.email }}</li>
+  {% endif %}
+</ul>
+{% assign content_size = member.content | size %}
+{% if content_size > 1 %}
+  content <p>{{ member.content | markdownify }}</p>
+{% endif %}

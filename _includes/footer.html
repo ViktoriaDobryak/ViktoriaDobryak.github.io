@@ -1,0 +1,13 @@
+<footer>
+Contact information:
+{% assign contacts = "President,Treasurer,Webmaster" | split: "," %}
+<ul>
+{% for contact in contacts %}
+  <li>
+	{% assign position = site.data.positions | find: "position", contact %}
+	{% assign member = site.members | find:"name", position.holder %}
+	{{contact}}: <a href="mailto:{{member.email}}">{{ member.name }}</a>
+	</li>
+{% endfor %}
+</ul>
+</footer>

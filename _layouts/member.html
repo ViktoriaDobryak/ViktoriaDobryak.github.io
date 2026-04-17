@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>{{ page.name }}</h1>
+<ul>
+  {% if page.school %}
+      <li>School: {{ page.school }}</li>
+  {% endif %}
+  {% if page.work_phone %}
+      <li>Work Phone: {{ page.work_phone }}</li>
+  {% endif %}
+  {% if page.home_phone %}
+      <li>Home Phone: {{ page.home_phone }}</li>
+  {% endif %}
+  {% if page.email %}
+      <li>Email: {{ page.email }}</li>
+	{% endif %}
+</ul>
+{{ content }}
+

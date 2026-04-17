@@ -1,0 +1,11 @@
+<nav>
+  {% for item in site.data.navigation %}
+	  {% if item.name == "Home" %}
+	    <a href="{{ item.link }}">
+				<img src="/assets/images/fw-profile-imageold.jpg" alt="{{ item.name }}">
+			</a>
+	  {% else %}
+      <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+	  {% endif %}
+  {% endfor %}
+</nav>

@@ -1,0 +1,11 @@
+<a href="{{ event.url }}">
+  <time>
+	  {% assign date_formatted = event.date | date: "%Y-%m-%d" %}
+	  {% assign time_formatted = event.date | date: "%H%M" %}
+		{{ date_formatted }}
+	  {% if time_formatted != "0000" %}
+	    {{ event.date | date: "at %l:%M%P" }}
+	  {% endif %}
+  </time>
+  - {{ event.title }}
+</a>
