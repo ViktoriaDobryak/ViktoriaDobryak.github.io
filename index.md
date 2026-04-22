@@ -19,7 +19,7 @@ NIATM is a great way to  interchange views regarding the teaching of mathematics
 
 # Upcoming Events
 <ul>
-{% assign future_events = site.posts
+{% assign future_events = site.events
                         | where_exp: "event", "event.date > site.time"
 												| sort: "date" %}
 {% for event in future_events reverse limit:2 %}
@@ -39,7 +39,3 @@ NIATM is a great way to  interchange views regarding the teaching of mathematics
 
 # Membership Form
 Download Word form at: [Membership Form](/assets/files/NIATMmembershipForm.docx)
-
-# Follow us!
-- You can follow us on twitter at @NIATMath
-- Find us on Facebook! https://www.facebook.com/niatmath

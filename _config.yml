@@ -1,9 +1,14 @@
 title: The Northern Illinois Association of Teachers of Mathematics
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  NIATM (Northern Illinois Association of Teachers of Mathematics)
+  Associate Affiliate of the National Council of Teachers of
+  Mathematics Serving Winnebago, Boone, and other counties in northern
+  Illinois.  The purposes of NIATM is to encourage an active interest
+  in all areas of mathematics and mathematics education, to afford a
+  medium of interchange of views regarding the teaching of mathematics
+  and related disciplines, and to further the study of problems
+  relating to the teaching of mathematics and computer science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: NIATMath
@@ -17,6 +22,8 @@ future: true
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 collections:
   members:
@@ -30,6 +37,11 @@ defaults:
       type: "members"
     values:
       layout: "member"
+  - scope:
+      path: "assets/**"
+    values:
+      sitemap: false
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -9,7 +9,7 @@ The purposes of NIATM shall be to encourage an active interest in all areas of m
 
 # History
 NIATM was organized in 1986-1987 as an affiliate of the Illinois Council of Teachers of Mathematics to provide teachers of mathematics with the opportunity to meet, learn, and socialize at 4 dinner meeting per year.
-Previous featured speakers include Dr. John Dossey, Dr.. Zalman Usiskin, Dr. Alan Zollman, Carol Kajor, Tom Shilgalis, John McConnell, and Gail Burrill. Topics have included curriculum, technology, manipulatives, assessment, and master teacher.
+Previous featured speakers include Dr. John Dossey, Dr. Zalman Usiskin, Dr. Alan Zollman, Carol Kajor, Tom Shilgalis, John McConnell, and Gail Burrill. Topics have included curriculum, technology, manipulatives, assessment, and master teacher.
 
 
 NIATM is currently an affiliate of the National Council of Teachers of Mathematics.

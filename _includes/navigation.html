@@ -1,11 +1,63 @@
-<nav>
-  {% for item in site.data.navigation %}
-	  {% if item.name == "Home" %}
-	    <a href="{{ item.link }}">
-				<img src="/assets/images/fw-profile-imageold.jpg" alt="{{ item.name }}">
-			</a>
-	  {% else %}
-      <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
-	  {% endif %}
-  {% endfor %}
-</nav>
+<header id="l-header">
+<div class="container">
+	<div class="row logo">
+		<div class="col-lg-2">
+      <a href="/">
+        <img src="/assets/images/fw-profile-imageold.jpg" alt="HOME">
+      </a>
+		</div>
+		<!-- TODO: This text should disappear better on smaller screens. -->
+		<div class="col-lg">
+      <p>Northern Illinois Association of Teachers of Mathematics (NIATM)</p>
+			<p>Affiliate of Illinois Council of Teachers of Mathematics (ICTM)</p>
+    </div>
+  </div>
+	<div class="row navicon">
+    <a href=""><i class="fa fa-navicon"></i></a>
+  </div>
+	<div class="row navbar">
+		<nav class="col-lg-8 col-md-8 col-xs-12">
+			<ul class="row">
+				<li class="col-lg-3">
+					<ul class="subnav">
+						<a href="/about.html"
+									 {% if page.url == "/about.html" %} class="current" {% endif %}>
+								About Us</a>
+						<li><a href="/constitution.html"
+									 {% if page.url == "/constitution.html" %} class="current" {% endif %}>
+								Constitution</a></li>
+						<li><a href="/ByLaws.html"
+									 {% if page.url == "/ByLaws.html" %} class="current" {% endif %}>
+								By Laws</a></li>
+					</ul>
+				</li>
+				<li class="col-lg-3">
+					<ul class="subnav">
+						<a href="/members.html"
+									 {% if page.url == "/members.html" %} class="current" {% endif %}>
+								Members</a>
+						<li><a href="/photos.html"
+									 {% if page.url == "/photos.html" %} class="current" {% endif %}>
+								Photo Gallery</a></li>
+					</ul>
+				</li>
+				<li class="col-lg-3">
+					<a href="/events.html"
+						 {% if page.url == "/events.html" %} class="current" {% endif %}>
+						Calendar</a></li>
+				<li class="col-lg-3">
+					<ul class="subnav">
+						<a href="/math_contest.html"
+							 {% if page.url == "/math_contest.html" %} class="current" {% endif %}>
+							Contest</a>
+						<li>
+							<a href="/math_team.html"
+								 {% if page.url == "/math_team.html" %} class="current" {% endif %}>
+								Team Resources</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+</header>
